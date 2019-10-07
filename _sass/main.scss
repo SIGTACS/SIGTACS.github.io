@@ -4,9 +4,22 @@
 }
 
 .site-description{
-    text-align: center;
+    text-align: justify;
 }
 
-header{
+header {
     padding-top: 10%;
+}
+
+.navbar{
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-links{
+    display: inline-block;
+}
+
+.navbar .navbar-links+.navbar-links{
+    margin-left:20px;
 }
