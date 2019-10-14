@@ -13,36 +13,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">
-          <div class="site-title">{{ site.title | default: site.github.repository_name }}</div>
-        </a></h1>
-        
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-
-        <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
-
-        <!-- {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %} -->
-
-        <!-- {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %} -->
-
-        <div class="navbar flex flex-horizontal-center">
-          {% for item in site.navbar-links %}
-            <div class="navbar-links"><a href="{{ item.url }}">{{ item.title }}</a></div>
-          {% endfor %}
-        </div>
-      </header>
-      <section>
-
       {{ content }}
-
-      </section>
       <!-- <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
