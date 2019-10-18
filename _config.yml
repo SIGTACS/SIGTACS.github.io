@@ -5,6 +5,10 @@ show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
 
+permalink: /:year-:month-:day-:title/
+paginate: 10
+paginate_path: "/talks/page:num/"
+
 # List of links in the navigation bar
 navbar-links:
   - title: About
@@ -15,3 +19,6 @@ navbar-links:
 
   - title: Lecture Series
     url:
+
+plugins:
+  - jekyll-paginate

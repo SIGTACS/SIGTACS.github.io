@@ -3,13 +3,32 @@ layout: default
 ---
 
 <header>
-    <h1><a href="{{ "/" | absolute_url }}">
+    <h1 class="homepage-title"><a href="{{ "/" | absolute_url }}">
       <div class="site-title">{{ site.title | default: site.github.repository_name }}</div>
     </a></h1>
     
     {% if site.logo %}
       <img src="{{site.logo | relative_url}}" alt="Logo" />
     {% endif %}
+
+    <div class="navbar flex flex-horizontal-center">
+            <div class="navbar-links"><a href="{{ item.url }}">About</a></div>
+            
+            {% for post in site.posts %}
+              {% if post.type == 'talk' %}
+                <div class="navbar-links"><a href="{{ post.url }}">Talks</a></div>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+
+            {% for post in site.posts %}
+              {% if post.type == 'lecture' %}
+                <div class="navbar-links"><a href="{{ post.url }}">Lecture</a></div>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+
+    </div>
 
     <p class="site-description">{{ site.description | default: site.github.project_tagline }}</p>
 
@@ -21,11 +40,6 @@ layout: default
     <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
     {% endif %} -->
 
-    <div class="navbar flex flex-horizontal-center">
-      {% for item in site.navbar-links %}
-        <div class="navbar-links"><a href="{{ item.url }}">{{ item.title }}</a></div>
-      {% endfor %}
-    </div>
   </header>
   <section>
 
