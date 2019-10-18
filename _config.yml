@@ -8,6 +8,8 @@ theme: jekyll-theme-minimal
 permalink: /:year-:month-:day-:title/
 paginate: 10
 paginate_path: "/talks/page:num/"
+url: "https://sigtacs.github.io"
+baseurl: ""
 
 # List of links in the navigation bar
 navbar-links:
