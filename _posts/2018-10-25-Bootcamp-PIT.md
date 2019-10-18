@@ -15,5 +15,5 @@ Can we give a deterministic polynomial time algorithm? There is strong evidence 
 Last decade has seen continuous progress in this area, several special cases are now solved and strong reduction results are known. In this workshop we will start from the basics and go on till we see a few state of the art results. The prerequisite for understanding the talks is minimal, basic understanding of linear algebra and algorithms should be sufficient.
 
 References:
--[https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf][https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf]
--[https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf][https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf]
+* [https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf](https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf)
+* [https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf](https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf)
