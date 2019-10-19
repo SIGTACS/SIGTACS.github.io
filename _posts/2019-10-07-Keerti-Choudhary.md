@@ -15,4 +15,6 @@ In this talk, the speaker will discuss the following questions:
 2. How fast can we compute the strongly connected components, again on the occurrence of failures?
 3. Does there exist a sparse certificate for these structures that remains valid even after a bounded number of failures?
 
-The solutions to these problems employ extremely basic tools like max-flows, min-cuts, and heavy-path-decomposition.
+The solutions to these problems employ extremely basic tools like max-flows, min-cuts, and heavy-path-decomposition. 
+
+[Slides](/assets/resource/talk_iitk_keerti_7oct.pdf)

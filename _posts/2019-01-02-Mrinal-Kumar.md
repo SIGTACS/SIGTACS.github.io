@@ -18,4 +18,6 @@ I will talk about the following two results, whose study was motivated by these 
 
 2. All factors of degree at most poly(log n) of polynomials with constant depth circuits of size poly(n) have constant (a slightly larger constant) depth arithmetic circuits of size poly(n). This partially answers a question of Shpilka and Yehudayoff and has applications to hardness-randomness tradeoffs for constant depth arithmetic circuits.
 
-Based on joint work with Chi-Ning Chou and Noam Solomon. [Slides](/assets/resource/polyfactorization-3.pdf)
+Based on joint work with Chi-Ning Chou and Noam Solomon. 
+
+[Slides](/assets/resource/polyfactorization-3.pdf)
