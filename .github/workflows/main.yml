@@ -14,7 +14,7 @@ jobs:
           mkdir _site
           
           # clone remote repo to "_site"
-          git clone https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ secrets.GITHUB_REPOSITORY }} --branch gh-pages _site
+          git clone https://github.com/SIGTACS/SIGTACS.github.io.git --branch gh-pages _site
           
           # build with Jekyll into "_site"
           bundle exec jekyll build
