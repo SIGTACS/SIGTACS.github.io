@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build & Deploy to GitHub Pages
-      - run : |
+        run : |
           # cleanup "_site"
           rm -rf _site
           mkdir _site
