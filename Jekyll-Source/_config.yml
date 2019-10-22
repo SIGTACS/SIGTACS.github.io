@@ -7,7 +7,7 @@ theme: jekyll-theme-minimal
 
 #permalink: /:year-:month-:day-:title/
 permalink: /:year/:month/:title.html
-url: "https://sigtacs.github.io"
+url: "https://sigtacs.github.io/"
 baseurl: ""
 
 # List of links in the navigation bar
