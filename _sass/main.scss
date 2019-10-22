@@ -1,0 +1,35 @@
+.site-title{
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+
+.site-description{
+    text-align: justify;
+}
+
+header {
+    padding-top: 10%;
+}
+
+.post-header{
+    padding-top:0%;
+}
+
+.navbar{
+    text-align: center;
+    width: 100%;
+    margin:0 0 10px;
+}
+
+.navbar-links{
+    display: inline-block;
+}
+
+.navbar .navbar-links+.navbar-links{
+    margin-left:20px;
+}
+
+.talk-post{
+    text-align: center;
+}
