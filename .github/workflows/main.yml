@@ -8,8 +8,21 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build & Deploy to GitHub Pages
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+      - run : |
+          # cleanup "_site"
+          rm -rf _site
+          mkdir _site
+          
+          # clone remote repo to "_site"
+          git clone https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ secrets.GITHUB_REPOSITORY }} --branch gh-pages _site
+          
+          # build with Jekyll into "_site"
+          bundle exec jekyll build
+
+          # push
+          cd _site
+          git config user.email "prateek.dwv21@gmail.com"
+          git config user.name "Prateek Dwivedi"
+          git add --all
+          git commit -a -m "Action Build"
+          git push --force origin gh-pages
