@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Some closure results for polynomial factorization and applications "
 author: "Mrinal Kumar"
 coordinates: KD101, 5 PM 2nd Jan 2019

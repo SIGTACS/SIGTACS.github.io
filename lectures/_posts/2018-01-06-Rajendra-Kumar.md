@@ -1,6 +1,7 @@
 ---
 layout: post
-type: lecture
+categories:
+  - lecture
 title:  "Cryptographic Hash Functions"
 author: "Rajendra Kumar"
 coordinates: KD102, 5 PM 6th Jan 2018

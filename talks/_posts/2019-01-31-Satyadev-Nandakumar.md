@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "A weak-2 generic that bounds a minimal degree"
 author: "Satyadev Nandakumar"
 coordinates: KD102, 5 PM 31st Jan 2019

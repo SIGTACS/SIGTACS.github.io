@@ -1,6 +1,7 @@
 ---
 layout: post
-type: lecture
+categories:
+  - lecture
 title:  "A Bootcamp on polynomial identity testing"
 author: "SIGTACS"
 coordinates: KD103, 3 PM 25th Oct 2018

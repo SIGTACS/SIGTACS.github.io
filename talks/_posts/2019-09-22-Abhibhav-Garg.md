@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Improved upper bounds for set families with sunflowers"
 author: "Abhibhav Garg"
 coordinates: KD102, 4 PM 22th Sept 2019

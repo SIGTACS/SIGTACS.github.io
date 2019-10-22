@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Certifiable randomness using quantum mechanical devices"
 author: "Nikhil Shagrithaya"
 coordinates: KD102, 5 PM 17th Aug 2019

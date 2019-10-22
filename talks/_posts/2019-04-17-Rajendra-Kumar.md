@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Efficient reductions among lattice problems"
 author: "Rajendra Kumar"
 coordinates: KD102, 10 AM 17th Apr 2019

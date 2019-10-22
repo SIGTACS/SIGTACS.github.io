@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Reachability in O(log n) Genus Graphs is in Unambiguous logspace"
 author: "Chetan Gupta"
 coordinates: KD103, 11 AM 19th Oct 2019

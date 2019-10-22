@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "On Approximation Closure of Algebraic Complexity classes"
 author: "Prateek Dwivedi"
 coordinates: KD102, 4 PM 28th Sept 2019

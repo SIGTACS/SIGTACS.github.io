@@ -1,6 +1,7 @@
 ---
 layout: post
-type: lecture
+categories:
+  - lecture
 title:  "Lattices in Computer Science"
 author: "Rajendra and Mahesh"
 coordinates: KD102, 4 PM 20th Jun 2017

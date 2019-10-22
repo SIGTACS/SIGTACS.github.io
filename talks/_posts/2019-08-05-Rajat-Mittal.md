@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Sensitivity conjecture"
 author: "Rajat Mittal"
 coordinates: KD102, 3 PM 5th Aug 2019

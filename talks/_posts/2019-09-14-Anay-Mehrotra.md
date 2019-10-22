@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Applications of Communication Complexity in Lower Bounds for Streaming Algorithms"
 author: "Anay Mehrotra"
 coordinates: KD102, 4 PM 14th Sept 2019

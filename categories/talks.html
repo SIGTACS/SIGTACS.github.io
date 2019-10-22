@@ -1,5 +1,10 @@
 ---
 layout: default
+permalink: /talks/
+pagination: 
+  enabled: true
+  category: talk
+  permalink: /:num/
 ---
 
 <header class="post-header">
@@ -11,20 +16,35 @@ layout: default
 
   <ul>
     {% for post in paginator.posts %}
-      {% if post.type == 'talk' %}
         <li>
           <a href="">{{ post.title }}</a>
         </li>
-      {% endif %}
     {% endfor %}
   </ul>
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous
+      </a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+  </div>
 </header>
 
 <section>
     <!--<small>{{ page.date | date: "%-d %B %Y" }}</small>-->
 
     {% for post in paginator.posts %}
-        {% if post.type == 'talk' %}
             <h2>{{ post.title }}</h2>
             <p class="view">by {{ post.author | default: site.author }}</p>
             <p class="view">coordinates {{ post.coordinates }}</p>
@@ -37,6 +57,5 @@ layout: default
             {% if post.tags %}
                 <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
             {% endif %}
-        {% endif %}
     {% endfor %}
   </section>

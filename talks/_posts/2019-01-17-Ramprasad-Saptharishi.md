@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "An Improved Depth Reduction for Syntactically Multilinear Circuits "
 author: "Ramprasad Saptharishi"
 coordinates: KD102, 5 PM 17th Jan 2019

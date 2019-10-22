@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Hardness of Lattice Problems"
 author: "Rajendra Kumar"
 coordinates: KD102, 12:15 PM 25th Aug 2018

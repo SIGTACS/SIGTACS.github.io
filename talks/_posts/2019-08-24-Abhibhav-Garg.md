@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Topological Methods in Combinatorics"
 author: "Abhibhav Garg"
 coordinates: KD102, 4 PM 24th Aug 2019

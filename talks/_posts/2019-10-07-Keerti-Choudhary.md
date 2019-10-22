@@ -1,6 +1,7 @@
 ---
 layout: post
-type: talk
+categories:
+  - talk
 title:  "Fault-Tolerant Reachability and Strong-connectivity Structures"
 author: "Keerti Choudhary"
 coordinates: KD103, 4 PM 7th Oct 2019
