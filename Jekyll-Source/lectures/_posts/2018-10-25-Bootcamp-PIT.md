@@ -18,5 +18,5 @@ Last decade has seen continuous progress in this area, several special cases are
 [Program](/assets/resource/bootcamp-PIT.pdf)
 
 References:
-* [https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf](https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf)
-* [https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf](https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf)
+* [Progress on Polynomial Identity Testing - Nitin Saxena](https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf)
+* [Classifying polynomials and identity testing - Manindra Agarwal and Ramprasad Saptharishi](https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf)
