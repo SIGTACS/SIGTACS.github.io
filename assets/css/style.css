@@ -237,7 +237,6 @@
 
 body {
   background-color: #fff;
-  padding: 50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #727272;
   font-weight: 400; }
@@ -279,7 +278,7 @@ a:hover small {
   color: #777; }
 
 .wrapper {
-  width: 860px;
+  width: 992px;
   margin: 0 auto; }
 
 blockquote {
@@ -319,7 +318,7 @@ img {
   max-width: 100%; }
 
 header {
-  width: 270px;
+  width: 350px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased; }
@@ -375,8 +374,9 @@ strong {
   color: #222; }
 
 section {
-  width: 500px;
+  width: 600px;
   float: right;
+  padding-top: 50px;
   padding-bottom: 50px; }
 
 small {
@@ -469,6 +469,7 @@ hr {
   text-align: justify; }
 
 header {
+  height: 100%;
   padding-top: 10%; }
 
 .post-header {
@@ -490,3 +491,22 @@ header {
 
 .talk-content {
   text-align: justify; }
+
+.post-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: medium; }
+
+.post-list {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px; }
+
+.post-author {
+  float: left;
+  font-style: italic; }
+
+.post-date {
+  float: right;
+  font-style: italic; }
