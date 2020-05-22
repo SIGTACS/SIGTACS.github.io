@@ -70,30 +70,29 @@
   <h1> Recent Talks </h1>
 
 
-    <h2 id = "/2020/05/Pranav-Bisht"> Poly-time blackbox identity testing for sum of log-variate, constant-width ROABPs </h2>
+    <h2 id = "/2020/05/Chi-Ning-Chou"> Optimal Streaming Approximations for all Boolean Max-2CSPs </h2>
     <div  class="talk-sub-head">
-        <p class="view post-author">by  Pranav Bisht</p>
+        <p class="view post-author">by  Chi-Ning Chou</p>
         <p class="view post-cod">Coordinates:  
           
-            <a href="https://youtu.be/2zzfCgi2NkA">- Watch It Here</a>
+            <a href="https://youtu.be/en_E2J1YDnI">- Watch It Here</a>
           
         </p>
       </div>
       
-          <p class="view"> <a href="/assets/resource/2020-05-03-Pranav-Bisht.pdf"> Slides</a> </p>
+          <p class="view"> <a href="/assets/resource/2020-05-14-Chi-Ning-Chou.pdf"> Slides</a> </p>
       
 
     <div class = "talk-content">
         <h2 id="abstract">Abstract</h2>
 
-<p>The talk is based on joint work with Prof. Nitin Saxena. We explore blackbox PIT (Polynomial Identity Testing) problem for the model of “Sum of ROABPs (Read-once oblivious Algebraic Branching Programs)”. Recent bootstrapping results motivate us to study log-variate ROABPs. We also restrict the width of ROABP to a constant but study the more general sum-of-ROABPs model. We give the first poly($s$)-time blackbox PIT for sum of constant-many, size-$s$, $O(\log s)$-variate constant-width ROABPs. The
-previous best for this model was a quasi-polynomial time which is comparable to brute-force in the log-variate setting. Also, we handle unbounded-many such ROABPs if each ROABP computes a homogeneous polynomial.</p>
+<p>Constraint Satisfaction Problem (CSP)is one of the central computational problems studied in complexity theory. In this work, we focus on the streaming model where the input is a sequence of constraints and the goal is to approximate the maximum number of satisfied constraints using space as small as possible.</p>
 
-<p>Our new techniques comprise– (1) a ROABP computing a homogeneous polynomial can be made syntactically homogeneous in the same width; and (2) overcome the hurdle of unknown variable order in sum-of-ROABPs in the log-variate setting (over any field).</p>
+<p>Unlike the traditional setting, there have been very few results in the streaming model. A recent line of works culminating in [Kapralov-Krachun, STOC 2019]shows that $(1/2+\varepsilon)$-approximation for Max-CUT requires $\Omega(n)$ space while there is a trivial $1/2$-approximation using $O(\log n)$ space. However, the knowledge of the right approximation ratio for other boolean 2CSP in the streaming model remains elusive. Specifically, prior to this work, there is a $2/5$-approximation for Max-DICUT while the hardness side only refutes $1/2$-approximation [Guruswami-Velingker-Velusamy, APPROX-RANDOM 2017].</p>
 
-<p>In the talk, we will begin from scratch with definitions of PIT and various models including ROABPs. Then, we shall discuss the motivations behind this model and its non-triviality. Finally, we will give a brief overview of the PIT algorithms and why they work.</p>
+<p>In this work, we show that, surprisingly, the right approximation ratio for Max-DICUT in the streaming model is $4/9$. Furthermore, we settle down the right approximation ratios for all the boolean 2CSP in the streaming model. The techniques we are using are random samplings and reductions from the distributional boolean hidden matching problem (DBHP).</p>
 
-<p>See the paper for more detials: <a href="https://eccc.weizmann.ac.il/report/2020/042/">TR20-042</a></p>
+<p>This is joint work with Santhoshini Velusamy and Sasha Golonev.</p>
 
     </div>
     
