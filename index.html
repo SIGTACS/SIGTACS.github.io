@@ -26,7 +26,7 @@
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="SIGTACS" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","headline":"SIGTACS","name":"SIGTACS","description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","@context":"https://schema.org"}</script>
+{"description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","@type":"WebSite","headline":"SIGTACS","name":"SIGTACS","url":"http://localhost:4000/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -55,10 +55,6 @@
     <!--  -->
 
     <!--  -->
-    <div class="social-connect">
-      <div class="YT"></div>
-      <div class="RSS"></div>
-    </div>
     <footer>
       
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
@@ -70,29 +66,27 @@
   <h1> Recent Talks </h1>
 
 
-    <h2 id = "/2020/05/Chi-Ning-Chou"> Optimal Streaming Approximations for all Boolean Max-2CSPs </h2>
+    <h2 id = "/2020/07/Ashish-Dwivedi"> Computing Igusa's local zeta function of univariates in deterministic polynomial-time </h2>
     <div  class="talk-sub-head">
-        <p class="view post-author">by  Chi-Ning Chou</p>
+        <p class="view post-author">by  Ashish Dwivedi</p>
         <p class="view post-cod">Coordinates:  
           
-            <a href="https://youtu.be/en_E2J1YDnI">- Watch It Here</a>
+            <a href="https://youtu.be/3OQt2TgOkxw">- Watch It Here</a>
           
         </p>
       </div>
       
-          <p class="view"> <a href="/assets/resource/2020-05-14-Chi-Ning-Chou.pdf"> Slides</a> </p>
+          <p class="view"> <a href="/assets/resource/2020-07-14-Ashish-Dwivedi.pdf"> Slides</a> </p>
       
 
     <div class = "talk-content">
         <h2 id="abstract">Abstract</h2>
 
-<p>Constraint Satisfaction Problem (CSP)is one of the central computational problems studied in complexity theory. In this work, we focus on the streaming model where the input is a sequence of constraints and the goal is to approximate the maximum number of satisfied constraints using space as small as possible.</p>
+<p>The famous millennium prize problem “The Riemann Hypothesis” is about the zeros of a zeta function known as “Riemann Zeta Function”. In this talk we will talk about another interesting zeta function which counts the number of roots of a polynomial, $f(x_1,\dots,x_n)$ with integer coefficients, reduced mod a prime-power $p^k$, for all k; known as— Igusa’s Local Zeta Function $Z_{f,p}(s)$.</p>
 
-<p>Unlike the traditional setting, there have been very few results in the streaming model. A recent line of works culminating in [Kapralov-Krachun, STOC 2019]shows that $(1/2+\varepsilon)$-approximation for Max-CUT requires $\Omega(n)$ space while there is a trivial $1/2$-approximation using $O(\log n)$ space. However, the knowledge of the right approximation ratio for other boolean 2CSP in the streaming model remains elusive. Specifically, prior to this work, there is a $2/5$-approximation for Max-DICUT while the hardness side only refutes $1/2$-approximation [Guruswami-Velingker-Velusamy, APPROX-RANDOM 2017].</p>
+<p>It is a famous result, in analytic number theory, that $Z_{f,p}(s)$ converges to a rational function. We give an elementary proof of this fact for a 1-variable polynomial $f(x)$. Our proof is constructive as it gives an explicit formula for the number of roots of $f(x) \mod{p^k}$. Our proof, when combined with the recent root-counting algorithm of (Dwivedi, Mittal, Saxena, CCC, 2019), yields the first deterministic poly-time algorithm to compute the rational form of $Z_{f,p}(s)$.</p>
 
-<p>In this work, we show that, surprisingly, the right approximation ratio for Max-DICUT in the streaming model is $4/9$. Furthermore, we settle down the right approximation ratios for all the boolean 2CSP in the streaming model. The techniques we are using are random samplings and reductions from the distributional boolean hidden matching problem (DBHP).</p>
-
-<p>This is joint work with Santhoshini Velusamy and Sasha Golonev.</p>
+<p>This is based on joint work <a href="https://www.math.auckland.ac.nz/~sgal018/ANTS/papers/Dwivedi-Saxena.pdf">ANTS 2020</a> with Professor Nitin Saxena.</p>
 
     </div>
     
