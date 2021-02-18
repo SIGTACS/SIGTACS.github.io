@@ -514,3 +514,6 @@ header {
 .talk-sub-head {
   width: 100%;
   display: inline-block; }
+
+.pagination {
+  padding-inline-start: 40px; }
