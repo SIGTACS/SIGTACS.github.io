@@ -15,19 +15,21 @@
       <script id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
       </script>
-<!-- Begin Jekyll SEO tag v2.6.1 -->
+<!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Page 4 of 4 for SIGTACS - page 4 | SIGTACS</title>
-<meta name="generator" content="Jekyll v3.8.6" />
+<meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="SIGTACS - page 4" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures." />
 <meta property="og:description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures." />
-<link rel="canonical" href="http://localhost:4000/talks/4/" />
-<meta property="og:url" content="http://localhost:4000/talks/4/" />
+<link rel="canonical" href="https://sigtacs.github.io//talks/4/" />
+<meta property="og:url" content="https://sigtacs.github.io//talks/4/" />
 <meta property="og:site_name" content="SIGTACS" />
-<link rel="prev" href="http://localhost:4000/talks/3/" />
+<link rel="prev" href="https://sigtacs.github.io//talks/3/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SIGTACS - page 4" />
 <script type="application/ld+json">
-{"description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","@type":"WebPage","headline":"SIGTACS - page 4","url":"http://localhost:4000/talks/4/","@context":"https://schema.org"}</script>
+{"headline":"SIGTACS - page 4","url":"https://sigtacs.github.io//talks/4/","@type":"WebPage","description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
@@ -42,36 +44,50 @@
       <div class="site-title">SIGTACS</div>
     </a>
   </h1>
-    <h2 class="talk-post"> Talks </h2>
+    <h2 class="talk-post"> Lectures </h2>
 
   <ul>
     
-        <div class="post-list">
+      <div class="post-list">
+          <div class="post-link">
+            <a href="#/2018/09/Zeyu-Guo">A simple construction of hitting-set generators for boolean read-once branching programs</a></div>
+          <div>
+            <div class="post-author">Zeyu Guo</div>
+            <div class="post-date">01 Sep 2018</div>
+          </div>
+        </div>
+        <!--
+          <li>
+            <a href="#/2018/09/Zeyu-Guo">A simple construction of hitting-set generators for boolean read-once branching programs</a>
+          </li>
+        -->
+    
+      <div class="post-list">
           <div class="post-link">
             <a href="#/2018/08/Rajendra-Kumar">Hardness of Lattice Problems</a></div>
           <div>
             <div class="post-author">Rajendra Kumar</div>
-            <div class="post-cod"></div>
+            <div class="post-date">25 Aug 2018</div>
           </div>
         </div>
         <!--
-        <li style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:">
-          <a href="#/2018/08/Rajendra-Kumar">Hardness of Lattice Problems</a>
-        </li>
+          <li>
+            <a href="#/2018/08/Rajendra-Kumar">Hardness of Lattice Problems</a>
+          </li>
         -->
     
-        <div class="post-list">
+      <div class="post-list">
           <div class="post-link">
             <a href="#/2018/08/Amit-KS">Algebraic Techniques for Combinatorial Problems</a></div>
           <div>
             <div class="post-author">Amit K S</div>
-            <div class="post-cod"></div>
+            <div class="post-date">18 Aug 2018</div>
           </div>
         </div>
         <!--
-        <li style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:">
-          <a href="#/2018/08/Amit-KS">Algebraic Techniques for Combinatorial Problems</a>
-        </li>
+          <li>
+            <a href="#/2018/08/Amit-KS">Algebraic Techniques for Combinatorial Problems</a>
+          </li>
         -->
     
   </ul>
@@ -94,6 +110,32 @@
 <section>
     <!--<small></small>-->
 
+    
+            <h2 id = "/2018/09/Zeyu-Guo">A simple construction of hitting-set generators for boolean read-once branching programs</h2>
+            <div  class="talk-sub-head">
+              <p class="view post-author">by Zeyu Guo</p>
+              <p class="view post-cod">Coordinates: KD102, 4 PM 1st Sept 2018 
+                
+              </p>
+            </div>
+            
+
+            <div class = "talk-content">
+                <h3 id="abstract">Abstract</h3>
+
+<p>In this talk, we shall discuss about Hoza and Zuckerman’s recent construction of explicit HSGs for boolean read-once branching programs (ROBPs) (Hoza, Zuckerman, FOCS 2018).</p>
+
+<p>A $\epsilon$-HSG for ROBPs is a function $G$ such that if an ROBP has acceptance probability at least $\epsilon$ using perfect randomness, then it has nonzero acceptance probability using the output of $G$ with a random seed. One way to prove RL=L is constructing a $1/2$-HSG for width-$n$, length-$n$ ROBPs with seed length $O(\log n)$ that can be simulated in logspace.</p>
+
+<p>Hoza and Zuckerman recently obtained a simple construction of explicit HSGs that improves previously known HSGs. In particular, their generator has seed length $o(\log n\log r)$ for ROBPs of length $r=n^{o(1)}$, improving Nisan’s generator (Nisan, 1992) which has seed length $O(\log n\log r)$.</p>
+
+            </div>
+
+
+            <!-- 
+                <small>tags: <em></em></small>
+             -->
+            <hr>
     
             <h2 id = "/2018/08/Rajendra-Kumar">Hardness of Lattice Problems</h2>
             <div  class="talk-sub-head">
@@ -124,6 +166,7 @@
 
             </div>
 
+
             <!-- 
                 <small>tags: <em></em></small>
              -->
@@ -146,6 +189,7 @@
 <p>This paper follows the approach of using algebraic techniques (manipulating polynomials) to design faster algorithms for hard combinatorial problems. Time permitting, we shall discuss some of the other recent applications of this approach.</p>
 
             </div>
+
 
             <!-- 
                 <small>tags: <em></em></small>
