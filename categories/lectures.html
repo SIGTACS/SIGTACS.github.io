@@ -1,0 +1,81 @@
+---
+layout: default
+permalink: /lectures/
+pagination: 
+  enabled: true
+  category: lecture
+  permalink: /:num/
+---
+
+<header class="post-header">
+    <h1><a href="https://sigtacs.github.io/">
+      <div class="site-title">SIGTACS</div>
+    </a>
+  </h1>
+    <h2 class="talk-post"> Lectures </h2>
+
+  <ul>
+    {% for post in paginator.posts %}
+      <div class="post-list">
+          <div class="post-link">
+            <a href="#{{ post.id }}">{{ post.title }}</a></div>
+          <div>
+            <div class="post-author">{{ post.author }}</div>
+            <div class="post-date">{{ post.date | date_to_string }}</div>
+          </div>
+        </div>
+        <!--
+          <li>
+            <a href="#{{ post.id }}">{{ post.title }}</a>
+          </li>
+        -->
+    {% endfor %}
+  </ul>
+
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">
+        Previous
+      </a>
+    {% else %}
+      <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    </span>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+      <span class="next ">Next</span>
+    {% endif %}
+  </div>
+</header>
+
+<section>
+    <!--<small>{{ page.date | date: "%-d %B %Y" }}</small>-->
+
+    {% for post in paginator.posts %}
+            <h2 id = "{{ post.id }}">{{ post.title }}</h2>
+            <div  class="talk-sub-head">
+              <p class="view post-author">by {{ post.author | default: site.author }}</p>
+              <p class="view post-cod">Coordinates: {{ post.coordinates }} 
+                {% if post.link %}
+                  <a href="{{ post.link }}">- Watch It Here</a>
+                {% endif %}
+              </p>
+            </div>
+            {% if post.slides%}
+                <p class="view"> <a href="/assets/resource/{{ post.slides }}"> Slides</a> </p>
+            {% endif %}
+
+            <div class = "talk-content">
+                {{ post.content }}
+            </div>
+
+
+            <!-- {% if post.tags %}
+                <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+            {% endif %} -->
+            <hr>
+    {% endfor %}
+  </section>
