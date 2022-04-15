@@ -5,7 +5,7 @@ categories:
 title:  "Functional Synthesis: An Ideal Meeting Ground for Formal Methods and Machine Learning"
 author: "Priyanka Golia"
 fixture: "14-04-2022"
-coordinates: "KD103, 5 PM IST, 15th Sept 2021"
+coordinates: "KD103, 5 PM IST, 14th April 2022"
 link: 
 tags: 
 ---
