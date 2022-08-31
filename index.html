@@ -1,50 +1,133 @@
----
-layout: homepage
----
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }
+      };
+      </script>
+      <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+      </script>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SIGTACS | Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="SIGTACS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures." />
+<meta property="og:description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="SIGTACS" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SIGTACS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","headline":"SIGTACS","name":"SIGTACS","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
 
-<h1> Recent Talks </h1>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+    <h1 class="homepage-title"><a href="http://localhost:4000">
+      <div class="site-title">SIGTACS</div>
+    </a></h1>
+    
+    
 
-{% for post in site.categories.talk %}
-    <h2 id = "{{ post.id }}">{{ post.title }}</h2>
+    <div class="navbar flex flex-horizontal-center">
+      <!-- <div class="navbar-links"><a href="">About</a></div> -->
+      <div class="navbar-links"><a href="/talks/">Talks</a></div>
+      <div class="navbar-links"><a href="/lectures/">Lectures</a></div>
+
+    </div>
+
+    <p class="site-description">Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.</p>
+
+    <!--  -->
+
+    <!--  -->
+    <footer>
+      
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+
+  </header>
+  <section>
+
+  <h1> Recent Talks </h1>
+
+
+    <h2 id = "/2022/08/Prateek-Dwivedi">Lower Bounds on Restricted Algebraic Branching Programs</h2>
     <div  class="talk-sub-head">
-        <p class="view post-author">by {{ post.author | default: site.author }}</p>
-        <p class="view post-cod">{{ post.coordinates }} 
-          {% if post.link %}
-            <a href="{{ post.link }}">- Watch It Here</a>
-          {% endif %}
+        <p class="view post-author">by Prateek Dwivedi</p>
+        <p class="view post-cod">KD103, 5 pm, Friday 2nd September 
+          
         </p>
       </div>
-      {% if post.slides%}
-          <p class="view"> <a href="/assets/resource/{{ post.slides }}"> Slides</a> </p>
-      {% endif %}
+      
 
     <div class = "talk-content">
-        {{ post.content }}
+        <h2 id="abstract">Abstract</h2>
+
+<p>Read Once ABPs (RO) are polynomial computational models where the order of variable multiplication is crucial. Though highly restrictive, they are one of the few models for which algebraic lower-bounds results have been known for a while. This talk will discuss the lower bounds of a natural generalisation called the sum of RO.</p>
+
+<p>We will explore a well-known technique of proving algebraic lower bounds called the Partial Derivative method, which could be a topic of general interest for those interested in complexity theory.</p>
+
+<p>The talk is based on the work of V Arvind and S Raja from 2015 - “Some Lower Bound Results for Set-Multilinear Arithmetic Computations”.</p>
+
     </div>
-    {% break %}
-{% endfor %}
+    
 
 <hr>
 
 <h1> Recent Lecture Series </h1>
 
-{% for post in site.categories.lecture %}
-    <h2 id = "{{ post.id }}">{{ post.title }}</h2>
+
+    <h2 id = "/2018/10/Bootcamp-PIT">A Bootcamp on polynomial identity testing</h2>
 
     <div  class="talk-sub-head">
-        <p class="view post-author">by {{ post.author | default: site.author }}</p>
-        <p class="view post-cod">Coordinates: {{ post.coordinates }} 
-          {% if post.link %}
-            <a href="{{ post.link }}">- Watch It Here</a>
-          {% endif %}
+        <p class="view post-author">by SIGTACS</p>
+        <p class="view post-cod">Coordinates: KD103, 3 PM 25th Oct 2018 
+          
         </p>
       </div>
-      {% if post.slides%}
-          <p class="view"> <a href="/assets/resource/{{ post.slides }}"> Slides</a> </p>
-      {% endif %}
+      
 
     <div class = "talk-content">
-        {{ post.content }}
+        <h3 id="abstract">Abstract</h3>
+
+<p>Polynomial Identity Testing (PIT) is a fundamental problem in theoretical computer science . The problem is about finding an efficient algorithm to test if a given algebraic expression (for example, x^2-y^2=(x+y)(x-y) ) is an identity (LHS=RHS). Equivalently, the problem is to test whether a given algebraic formula computing a multivariate polynomial is identically zero or not. It may seem to be a trivial problem, as we can expand the polynomial, compute all its coefficients and check if they are zero. This is a correct algorithm, but the running time is exponential as there are exponentially many monomials in a generic n-variate degree d polynomial. A simple idea (check if the polynomial is zero at a random point) gives a more efficient (randomized polynomial time) algorithm, but the algorithm may mistakenly output zero for a non zero polynomial. Luckily the probability of error is really small, so this algorithm works in practice.</p>
+
+<p>Can we give a deterministic polynomial time algorithm? There is strong evidence that there exists such an algorithm. Finding a solution would be a major breakthrough as it would solve several problems in computer science.</p>
+
+<p>Last decade has seen continuous progress in this area, several special cases are now solved and strong reduction results are known. In this workshop we will start from the basics and go on till we see a few state of the art results. The prerequisite for understanding the talks is minimal, basic understanding of linear algebra and algorithms should be sufficient.</p>
+
+<p><a href="/assets/resource/bootcamp-PIT.pdf">Program</a></p>
+
+<p>References:</p>
+<ul>
+  <li><a href="https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf">Progress on Polynomial Identity Testing - Nitin Saxena</a></li>
+  <li><a href="https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf">Classifying polynomials and identity testing - Manindra Agarwal and Ramprasad Saptharishi</a></li>
+</ul>
+
     </div>
-    {% break %}
-{% endfor %}
+    
+
+  </section>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>

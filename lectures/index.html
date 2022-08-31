@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }
+      };
+      </script>
+      <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+      </script>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SIGTACS | Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="SIGTACS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures." />
+<meta property="og:description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures." />
+<link rel="canonical" href="http://localhost:4000/lectures/" />
+<meta property="og:url" content="http://localhost:4000/lectures/" />
+<meta property="og:site_name" content="SIGTACS" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="SIGTACS" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","headline":"SIGTACS","url":"http://localhost:4000/lectures/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="post-header">
+    <h1><a href="https://sigtacs.github.io/">
+      <div class="site-title">SIGTACS</div>
+    </a>
+  </h1>
+    <h2 class="talk-post"> Lectures </h2>
+
+  <ul>
+    
+      <div class="post-list">
+          <div class="post-link">
+            <a href="#/2018/10/Bootcamp-PIT">A Bootcamp on polynomial identity testing</a></div>
+          <div>
+            <div class="post-author">SIGTACS</div>
+            <div class="post-date">25 Oct 2018</div>
+          </div>
+        </div>
+        <!--
+          <li>
+            <a href="#/2018/10/Bootcamp-PIT">A Bootcamp on polynomial identity testing</a>
+          </li>
+        -->
+    
+      <div class="post-list">
+          <div class="post-link">
+            <a href="#/2018/02/Zeyu-Guo">Pseudorandomness</a></div>
+          <div>
+            <div class="post-author">Zeyu Guo</div>
+            <div class="post-date">14 Feb 2018</div>
+          </div>
+        </div>
+        <!--
+          <li>
+            <a href="#/2018/02/Zeyu-Guo">Pseudorandomness</a>
+          </li>
+        -->
+    
+      <div class="post-list">
+          <div class="post-link">
+            <a href="#/2018/01/Rajendra-Kumar">Cryptographic Hash Functions</a></div>
+          <div>
+            <div class="post-author">Rajendra Kumar</div>
+            <div class="post-date">06 Jan 2018</div>
+          </div>
+        </div>
+        <!--
+          <li>
+            <a href="#/2018/01/Rajendra-Kumar">Cryptographic Hash Functions</a>
+          </li>
+        -->
+    
+      <div class="post-list">
+          <div class="post-link">
+            <a href="#/2017/06/Rajendra-Mahesh">Lattices in Computer Science</a></div>
+          <div>
+            <div class="post-author">Rajendra and Mahesh</div>
+            <div class="post-date">20 Jun 2017</div>
+          </div>
+        </div>
+        <!--
+          <li>
+            <a href="#/2017/06/Rajendra-Mahesh">Lattices in Computer Science</a>
+          </li>
+        -->
+    
+  </ul>
+
+  <div class="pagination">
+    
+      <span class="previous">Previous</span>
+    
+    <span class="page_number ">
+      Page: 1 of 1
+    </span>
+    
+      <span class="next ">Next</span>
+    
+  </div>
+</header>
+
+<section>
+    <!--<small></small>-->
+
+    
+            <h2 id = "/2018/10/Bootcamp-PIT">A Bootcamp on polynomial identity testing</h2>
+            <div  class="talk-sub-head">
+              <p class="view post-author">by SIGTACS</p>
+              <p class="view post-cod">Coordinates: KD103, 3 PM 25th Oct 2018 
+                
+              </p>
+            </div>
+            
+
+            <div class = "talk-content">
+                <h3 id="abstract">Abstract</h3>
+
+<p>Polynomial Identity Testing (PIT) is a fundamental problem in theoretical computer science . The problem is about finding an efficient algorithm to test if a given algebraic expression (for example, x^2-y^2=(x+y)(x-y) ) is an identity (LHS=RHS). Equivalently, the problem is to test whether a given algebraic formula computing a multivariate polynomial is identically zero or not. It may seem to be a trivial problem, as we can expand the polynomial, compute all its coefficients and check if they are zero. This is a correct algorithm, but the running time is exponential as there are exponentially many monomials in a generic n-variate degree d polynomial. A simple idea (check if the polynomial is zero at a random point) gives a more efficient (randomized polynomial time) algorithm, but the algorithm may mistakenly output zero for a non zero polynomial. Luckily the probability of error is really small, so this algorithm works in practice.</p>
+
+<p>Can we give a deterministic polynomial time algorithm? There is strong evidence that there exists such an algorithm. Finding a solution would be a major breakthrough as it would solve several problems in computer science.</p>
+
+<p>Last decade has seen continuous progress in this area, several special cases are now solved and strong reduction results are known. In this workshop we will start from the basics and go on till we see a few state of the art results. The prerequisite for understanding the talks is minimal, basic understanding of linear algebra and algorithms should be sufficient.</p>
+
+<p><a href="/assets/resource/bootcamp-PIT.pdf">Program</a></p>
+
+<p>References:</p>
+<ul>
+  <li><a href="https://www.cse.iitk.ac.in/users/nitin/papers/pit-survey09.pdf">Progress on Polynomial Identity Testing - Nitin Saxena</a></li>
+  <li><a href="https://www.ias.ac.in/public/Resources/Other_Publications/Overview/Current_Trends/149-162.pdf">Classifying polynomials and identity testing - Manindra Agarwal and Ramprasad Saptharishi</a></li>
+</ul>
+
+            </div>
+
+
+            <!-- 
+                <small>tags: <em></em></small>
+             -->
+            <hr>
+    
+            <h2 id = "/2018/02/Zeyu-Guo">Pseudorandomness</h2>
+            <div  class="talk-sub-head">
+              <p class="view post-author">by Zeyu Guo</p>
+              <p class="view post-cod">Coordinates: KD102, 5 PM 14th Feb 2018 
+                
+              </p>
+            </div>
+            
+
+            <div class = "talk-content">
+                <h3 id="abstract">Abstract</h3>
+
+<p>The following is the tentative syllabus. I will often follow Salil Vadhan’s survey but not always.</p>
+
+<ul>
+  <li>Basic stuff: example of randomized algorithms. Probabilistic method. Derandomization by conditional expectations. Tail bounds. Pairwise and k-wise independence.</li>
+  <li>Epsilon-biased space and almost k-wise independence</li>
+  <li>Expander graphs. The combinatorial construction of expander graphs via Zigzag product</li>
+  <li>SL=L</li>
+  <li>Hardness vs. randomness: Nisan-Wigderson generator.</li>
+  <li>List-decodable codes and its application to hardness vs. randomness (hardness amplification)</li>
+  <li>(Seeded) extractors</li>
+</ul>
+
+            </div>
+
+
+            <!-- 
+                <small>tags: <em></em></small>
+             -->
+            <hr>
+    
+            <h2 id = "/2018/01/Rajendra-Kumar">Cryptographic Hash Functions</h2>
+            <div  class="talk-sub-head">
+              <p class="view post-author">by Rajendra Kumar</p>
+              <p class="view post-cod">Coordinates: KD102, 5 PM 6th Jan 2018 
+                
+              </p>
+            </div>
+            
+
+            <div class = "talk-content">
+                <h3 id="abstract">Abstract</h3>
+
+<p>Cryptographic hash functions is one of the main component of the modern cryptography, which has practical applications in providing message integrity, authentication, digital signatures and various others securities.</p>
+
+<p>SIGTACS is oragnizing a lecture series on the Cryptographic hash functions which will cover the following topics.</p>
+<ul>
+  <li>Introduction to cryptographic hash function</li>
+  <li>Merkle-Damgard Construction</li>
+  <li>MD5 hash function and its cryptanalysis</li>
+  <li>Sponge Construction</li>
+  <li>KECCAK hash function</li>
+  <li>Preimage attacks on KECCAK (will cover our recent paper)</li>
+  <li>Collision attacks on KECCAK</li>
+  <li>Introduction to BLAKE hash function</li>
+</ul>
+
+            </div>
+
+
+            <!-- 
+                <small>tags: <em></em></small>
+             -->
+            <hr>
+    
+            <h2 id = "/2017/06/Rajendra-Mahesh">Lattices in Computer Science</h2>
+            <div  class="talk-sub-head">
+              <p class="view post-author">by Rajendra and Mahesh</p>
+              <p class="view post-cod">Coordinates: KD102, 4 PM 20th Jun 2017 
+                
+              </p>
+            </div>
+            
+
+            <div class = "talk-content">
+                <h3 id="abstract">Abstract</h3>
+
+<p>In this course, we will consider mathematical objects known as lattices. More recently, lattices have become a topic of active research in computer science. They are used as an algorithmic tool to solve a wide variety of problems, they have many applications in cryptography and cryptanalysis and they have some unique properties from a computational complexity point of view. Classes will commence on 29th May. These are the topics that will be covered in the next 2 weeks.</p>
+
+<ul>
+  <li>Introduction to Lattices</li>
+  <li>LLL algorithm</li>
+  <li>Cryptanalysis of RSA and Knapsack Cryptosystem using LLL</li>
+</ul>
+
+            </div>
+
+
+            <!-- 
+                <small>tags: <em></em></small>
+             -->
+            <hr>
+    
+  </section>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+  </body>
+</html>
