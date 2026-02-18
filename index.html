@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+        }
+      };
+      </script>
+      <script id="MathJax-script" async="" src="sigtacs_files/tex-chtml.js">
+      </script>
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>SIGTACS | Special Interest Group on Theoretical Aspects of 
+Computer Science was born out of an effort to bring together people 
+interested in areas of Theoretical Computer Science. It is a platform 
+for students and faculty members to come together and share their 
+excitement in the area. The group aims at organizing problem solving 
+sessions, seminars and guest lectures.</title>
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="SIGTACS">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.">
+<meta property="og:description" content="Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.">
+<link rel="canonical" href="http://localhost:4000/">
+<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:site_name" content="SIGTACS">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="SIGTACS">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Special Interest Group on Theoretical Aspects of Computer Science was born out of an effort to bring together people interested in areas of Theoretical Computer Science. It is a platform for students and faculty members to come together and share their excitement in the area. The group aims at organizing problem solving sessions, seminars and guest lectures.","headline":"SIGTACS","name":"SIGTACS","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="sigtacs_files/style.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+  <body>
+    <div class="wrapper">
+      <header>
+    <h1 class="homepage-title"><a href="http://localhost:4000/">
+      <div class="site-title">SIGTACS</div>
+    </a></h1>
+
+    <p class="site-description">Special Interest Group on Theoretical 
+Aspects of Computer Science was born out of an effort to bring together 
+people interested in areas of Theoretical Computer Science. It is a 
+platform for students and faculty members to come together and share 
+their excitement in the area. The group aims at organizing problem 
+solving sessions, seminars and guest lectures.</p>
+
+    <!--  -->
+
+    <!--  -->
+    <footer>
+      
+      <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+
+  </header>
+  <section>
+
+  <h1> Recent Talks </h1>
+  <hr>
+  
+  <h2 id="/2025/12/Prateek-Dwivedi">Non-Closure Properties in Algebraic Complexity</h2>
+
+<div class="talk-sub-head">
+    <p class="view post-author">by Dr. Prateek Dwivedi</p>
+    <p class="view post-cod">KD102, 11:00 am, Tuesday 9th December 2025</p>
+</div>
+
+<div class="talk-content">
+    <h2 id="abstract">Abstract</h2>
+
+    <p>
+    A central question in algebraic complexity is how polynomial computation
+    models behave under basic algebraic operations. While most standard
+    models are closed under addition and multiplication, closure under
+    factorisation is much more subtle. This talk presents a new result showing
+    that read-once oblivious algebraic branching programs (roABPs) are not
+    closed under factorisation, and discusses related non-closure results under
+    operations such as powering and symmetric composition.
+    </p>
+    
+    <p>
+	This talk is based on joint work with Andrews, Armand, Hansen, Limaye, Srinivasan, and Tavenas. 
+	<a href="https://arxiv.org/abs/2509.10725" target="_blank">[arXiv]</a>
+    </p>
+
+</div>
+
+
+  <hr>
+  
+  <h2 id="/2025/10/Asif-Khan">An Introduction to Dynamic Complexity</h2>
+
+<div class="talk-sub-head">
+    <p class="view post-author">by Asif Khan</p>
+    <p class="view post-cod">KD 102, 5:30 pm, Monday 27th October 2025</p>
+</div>
+
+<div class="talk-content">
+    <h2 id="abstract">Abstract</h2>
+
+    <p>
+    Computational complexity of a problem is a measure of computational resources—time,
+    memory, circuit size/depth—needed to compute the output for any given instance of the
+    problem. In the dynamic setting, the input instance evolves over time, and one is
+    expected to update the output after each change. The goal is to avoid re-computation
+    from scratch after every change, and instead apply an update program to stored
+    auxiliary data to obtain the new output. The dynamic complexity of a problem measures
+    the resources required by such an update program.
+    </p>
+
+    <p>
+    In 1994, Patnaik and Immerman introduced an elegant framework from descriptive
+    complexity, defining the class DynFO. In the version considered here, the first-order
+    update formulas have access to built-in arithmetic (equivalently, AC<sup>0</sup>
+    circuits or constant-time algorithms on CRCW PRAM). In recent years, DynFO has seen
+    remarkable progress: reachability, CFL membership, tree isomorphism, MSO queries on
+    bounded-treewidth graphs, abelian group isomorphism, and planarity testing are now
+    known to be maintainable within DynFO.
+    </p>
+
+    <p>
+    This talk will introduce the ideas behind DynFO, survey key developments, and
+    highlight open directions. Time permitting, it will also discuss a recent result on
+    dynamic tree isomorphism based on joint work with Samir Datta.
+    </p>
+</div>
+
+<hr>
+
+  <h2 id="/2025/09/Premanshu-Chatterjee">Zebra Functions</h2>
+<div class="talk-sub-head">
+    <p class="view post-author">by Premanshu Chatterjee</p>
+    <p class="view post-cod">KD102, 5:30 pm, Tuesday 23rd September 2025</p>
+</div>
+
+<div class="talk-content">
+    <h2 id="abstract">Abstract</h2>
+
+    <p>
+    Boolean functions are fundamental in CS, with measures like query complexity,
+    block sensitivity, certificate complexity and degree capturing their difficulty.
+    While these measures are polynomially related, the tightness of those relations
+    remains open. For certain subclasses we can improve bounds — one such class is
+    <em>Zebra functions</em> (Chugh, Poddar & Sanyal, 2023). This talk introduces Zebra
+    functions, explains their relevance, and outlines improved upper bounds for them.
+    </p>
+</div>
+
+<hr>
+
+   <h2 id="/2025/08/Foram-Lakhani">Cook-Mertz Tree Evaluation</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Foram Lakhani</p>
+        <p class="view post-cod">KD102, 5:30 pm, Thursday 28th August, 2025</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        It seems intuitive that giving a computer an extra hard drive full of 
+        critical data does not aid computation. However, Cook and Mertz have 
+        discovered that such a memory -- if used in a "catalytic" way -- can 
+        actually help. Their surprising idea shows that additional memory can be 
+        valuable even when its contents must be fully restored after the 
+        computation is complete. This result was used for space-efficient Turing 
+        machine simulation, as observed in the last talk.
+        </p>
+
+        <p>
+        The talk is based on the work of Cook and Mertz.  
+        See <a href="https://dl.acm.org/doi/10.1145/3618260.3649664">[1]</a>,  
+        <a href="https://www.wisdom.weizmann.ac.il/~oded/VO/tree-eval.pdf">[2]</a>,  
+        and <a href="https://www.quantamagazine.org/catalytic-computing-taps-the-full-power-of-a-full-hard-drive-20250218/">[3]</a>.
+        </p>
+    </div>
+
+    <hr>
+	
+	
+    <h2 id="/2025/08/Foram-Lakhani">Simulating Time With Square-Root Space</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Foram Lakhani</p>
+        <p class="view post-cod">KD102, 5:30 pm, Thursday 21st August, 2025</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        In this talk we will discuss the proof of a breakthrough result by Ryan Williams, 
+        showing that all algorithms can be simulated using considerably less memory 
+        than the time of the original algorithm.
+        </p>
+
+        <p>
+        The talk is based on the work of Ryan Williams.  
+        See <a href="https://eccc.weizmann.ac.il/report/2025/017/">[1]</a> and  
+        <a href="https://www.quantamagazine.org/for-algorithms-a-little-memory-outweighs-a-lot-of-time-20250521/">[2]</a>.
+        </p>
+    </div>
+
+    <hr>
+      
+  <h2 id="/2025/08/Damini-Kusum">Inductive Success on Random Sequences</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Damini Kusum</p>
+        <p class="view post-cod">KD103, 3:30 pm, Thursday 14th August, 2025</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        For sequential prediction tasks, Solomonoff’s (1978) celebrated result
+        guarantees the inductive success of the “simplicity” prior by showing
+        that the predictive probabilities induced by any optimal c.e. semimeasure
+        converge to the posterior of the true probability almost surely. Hutter
+        and Muchnik (2006) have shown that there exists an optimal c.e.
+        semimeasure for which one can construct a Martin-Löf sequence along which
+        this optimal semimeasure fails to converge to the uniform measure. Since
+        the study of algorithmic randomness can be used to characterize
+        “almost-sure” convergence theorems, one can ask whether stronger
+        notions of randomness suffice for Solomonoff convergence.
+        </p>
+
+        <p>
+        We show that the minimal strength of randomness required for off-sequence
+        convergence is at most 2-computable randomness; this establishes an upper
+        bound on the weakest notion of randomness that ensures the success of
+        Solomonoff induction. Furthermore, due to its rejection of Turing
+        incomplete sequences as random, difference randomness prima facie appears
+        to be the weakest notion that could guarantee convergence. Contrary to
+        this intuition, we prove a negative result with respect to the uniform
+        measure. The machinery of this proof can be extended to show that any
+        notion of randomness that does not guarantee convergence of all c.e.
+        supermartingales will always yield a negative result for Solomonoff
+        convergence.
+        </p>
+
+        <p>
+        <b>Bio:</b> Damini is a PhD student in the Department of Philosophy at Carnegie
+        Mellon University. Her primary research interest is in algorithmic
+        randomness. She is also interested in logic, particularly as it pertains
+        to areas in formal epistemology, as well as in the philosophy and history
+        of mathematics.
+        </p>
+    </div>
+
+    <hr>
+	
+	<h2 id="/2025/05/Tufan-Singha-Mahapatra">Factoring polynomials over p-adic fields</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Tufan Singha Mahapatra</p>
+        <p class="view post-cod">KD103, Part 1 - 4:30 pm, Wednesday 28th May; Part 2 - 11:00 am, Thursday 29th May, 2025</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        This talk aims to understand the efficient algorithm for factoring polynomials over
+        finite algebraic extensions of the p-adic numbers. The known p-adic factoring
+        algorithms are due to A.L. Chistov (1987) and by Cantor & Gordon (2000).
+        </p>
+
+        <p>
+        This talk is based on the work of David G. Cantor and Daniel M. Gordon from 2000 –
+        <i>Factoring polynomials over p-adic fields</i>. This work uses the ideas of
+        Chistov’s randomized polynomial-time algorithm and is suitable for practical
+        implementation.
+        </p>
+
+        <p>
+        <b>Plan for this talk:</b><br>
+        <b>Day 1:</b> On the first day, we will try to learn about the p-adic numbers and a little
+        bit of p-adic analysis. Then we will see Modified Hensel Lifting.<br>
+        <b>Day 2:</b> On the second day, we will see the main p-adic algorithm.
+        </p>
+
+        <p>
+        Those who are interested in Algebra, Algebraic Number Theory, and Computational
+        Algebra may find this talk interesting.
+        </p>
+    </div>
+
+    <hr>
+	
+	<h2 id="/2025/02/Anindya-Ganguly">Various aspects of Multivariate Cryptography</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Anindya Ganguly</p>
+        <p class="view post-cod">KD103, 4:00 pm, Tuesday 4th February 2025</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        Multivariate cryptography has garnered significant attention, particularly
+        following the recent NIST standardization of additional signature schemes. Notably,
+        the second round of the competition featured five schemes: SNOVA, MAYO, UOV, QR-UOV,
+        and MQOM. Apart from MQOM, all of these follow the well-studied Unbalanced Oil and
+        Vinegar (UOV) principle.
+        </p>
+
+        <p>
+        This talk will delve into the foundational design principles of the UOV scheme and
+        its influence on the development of other signature schemes. We will also explore
+        the challenges associated with the implementation security of UOV and discuss
+        strategies to address them. Finally, we will examine the potential for extending UOV
+        signature schemes into a blind signature context, highlighting its implications for
+        privacy and secure communication.
+        </p>
+    </div>
+
+  <hr>
+  
+  <h2 id="/2024/11/Jaikumar-Radhakrishnan">Sunflowers: from soil to oil</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Prof. Jaikumar Radhakrishnan</p>
+        <p class="view post-cod">KD102, 4:00 pm, Thursday 7th November 2024</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        A sunflower is a collection of sets whose pairwise intersections are identical. In
+        this article, we shall go sunflower-picking. We find sunflowers in several seemingly
+        unrelated fields, before turning to discuss recent progress on the famous sunflower
+        conjecture of Erdős and Rado, made by Alweiss, Lovett, Wu and Zhang, as well
+        as a related resolution of the threshold vs expectation threshold conjecture of Kahn
+        and Kalai discovered by Park and Pham. We give short proofs for both of these
+        results.
+        </p>
+
+        <p>
+        The talk is based on  
+        <a href="https://homes.cs.washington.edu/~anuprao/pubs/sunflowersfromsoiltooil.pdf">this paper</a>.
+        </p>
+    </div>
+
+    <hr>
+	
+<h2 id="/2024/08/Akhil-S">Point to Set Principle and constructive dimension faithfulness</h2>
+    <div class="talk-sub-head">
+        <p class="view post-author">by Akhil S</p>
+        <p class="view post-cod">KD101, 4:00 pm, Wednesday 21st August 2024</p>
+    </div>
+
+    <div class="talk-content">
+        <h2 id="abstract">Abstract</h2>
+
+        <p>
+        Hausdorff dimension generalizes the idea of dimensionality to non-integer values, while its effective analogue, constructive dimension, captures the information rate of infinite binary strings. A key link between these notions is the Point-to-Set Principle, relating sequence complexity to the fractal dimension of sets.
+        </p>
+
+        <p>
+        In this talk, we introduce Hausdorff Φ-dimension and its effective version, constructive Φ-dimension, and prove a generalized Point-to-Set principle. We then study the concept of faithfulness—when restricted covers preserve dimension—and show that for Cantor coverings, faithfulness at the Hausdorff and constructive levels coincide.
+        </p>
+    </div>
+
+
+  </section>
+    </div>
+    <script src="sigtacs_files/scale.fix.js"></script>
+    
+  
+
+</body></html>
